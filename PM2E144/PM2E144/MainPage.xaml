@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PM2E144.MainPage"
+             Visual="Material"
+             Background="#CDD3CA">
+    
+    
+    <StackLayout>
+        <!--Imagen-->
+        <Label Text="IMAGEN DEL SITIO VISITADO" FontSize="15" TextColor="Black" HorizontalTextAlignment="Center"/>
+        <Image x:Name="Foto" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" BackgroundColor="AliceBlue" />
+        <Button x:Name="btnfoto" Text="Agregar foto" Clicked="btnfoto_Clicked" Margin="10,0,10,0" TextColor="White" BackgroundColor="#324C6A"/>
+        <!--Latitud-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+            <Label Text="Latitud:" FontSize="16" TextColor="Black" Margin="5,0,5,0"/>
+            <Label x:Name="txtlatitud" TextColor="Black" FontSize="16" Margin="5,0,5,0"/>
+        </StackLayout>
+        <!--Longitud-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Fill">
+            <Label Text="Longitud:" FontSize="16" TextColor="Black" Margin="5,0,5,0"/>
+            <Label x:Name="txtlongitud" TextColor="Black" FontSize="16" Margin="5,0,5,0"/>
+        </StackLayout>
+        <!--Descripcion-->
+        <Entry x:Name="txtdescripcion" Placeholder="INGRESE UNA DESCRIPCION" Keyboard="Text" Margin="10,0,10,0" TextColor="Black" FontSize="16" BackgroundColor="White"/>
+        <!--Botones-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button x:Name="btnagregar" Text="Agregar" Clicked="btnagregar_Clicked" Margin="10,0,10,0" TextColor="White" BackgroundColor="#324C6A"/>
+            <Button x:Name="btnlista" Text="Lista" Clicked="btnlista_Clicked" Margin="10,0,10,0" TextColor="White" BackgroundColor="#324C6A"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
