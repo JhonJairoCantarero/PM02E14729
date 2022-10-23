@@ -26,7 +26,7 @@
             <Label Text="{Binding latitud}" IsVisible="false" x:Name="txtlatitud"/>
             <Label Text="{Binding longitud}" IsVisible="false" x:Name="txtlongitud"/>
             <Label Text="{Binding descripcion}" x:Name="txtdescripcion" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
-            <Image x:Name="imageSite" Source="{Binding foto, Converter={StaticResource ByteToImage}}" HeightRequest="500" WidthRequest="500"/>
+            <Image x:Name="imageSite" Source="{Binding foto, Converter={StaticResource ByteToImage}}" HeightRequest="400" WidthRequest="400"/>
 
             <Button x:Name="btnmapa" Text="Ubicar en el mapa" Clicked="btnmapa_Clicked" Margin="10,0,10,0" TextColor="White" BackgroundColor="#324C6A"/>
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
